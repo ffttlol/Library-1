@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const { token, prefix } = require('./config.json');
 const prefix = ".";
 client.on('ready', () => {
 console.log(`Zalogowano jako ${client.user.tag}!`);
